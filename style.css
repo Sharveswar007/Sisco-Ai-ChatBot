@@ -1,0 +1,123 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #0d1117;
+  color: #ffffff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Chat Wrapper */
+.chat-wrapper {
+  background-color: #161b22;
+  width: 100%;
+  max-width: 500px;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+/* Header */
+.chat-header {
+  background-color: #1f2937;
+  padding: 16px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+.chat-header h2 {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+/* Chat Messages */
+#chat-box {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.message {
+  max-width: 80%;
+  padding: 10px 14px;
+  border-radius: 16px;
+  font-size: 15px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Bot message */
+.message.bot {
+  align-self: flex-start;
+  background-color: #2d333b;
+  color: #c9d1d9;
+  border-bottom-left-radius: 0;
+}
+
+/* User message */
+.message.user {
+  align-self: flex-end;
+  background-color: #1d4ed8;
+  color: #ffffff;
+  border-bottom-right-radius: 0;
+}
+
+/* Footer / Input */
+.chat-footer {
+  display: flex;
+  padding: 12px;
+  border-top: 1px solid #333;
+  background-color: #1f2937;
+}
+
+.chat-footer input[type="text"] {
+  flex: 1;
+  padding: 12px 14px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #0d1117;
+  color: white;
+  margin-right: 10px;
+}
+
+.chat-footer button {
+  background-color: #2563eb;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.2s ease;
+}
+
+.chat-footer button:hover {
+  background-color: #1e40af;
+}
+
+/* Code block styles (from highlight.js) */
+pre {
+  background: #1e1e1e;
+  color: #dcdcdc;
+  padding: 10px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
